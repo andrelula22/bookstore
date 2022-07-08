@@ -1,4 +1,4 @@
-package com.andrelula.bookstore.models;
+package com.andrelula.bookstore.domain;
 
 import javax.persistence.*;
 import java.io.Serializable;
