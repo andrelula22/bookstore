@@ -2,13 +2,20 @@ package com.andrelula.bookstore.dtos;
 
 import com.andrelula.bookstore.domain.Categoria;
 
-public class CategoriaDTO {
+import java.io.Serializable;
 
+public class CategoriaDTO implements Serializable {
+
+    private static final long serialVersionUID = 1L;
     private Integer id;
     private String nome;
     private String descricao;
 
+    public CategoriaDTO(){
+        super();
+    }
     public CategoriaDTO(Categoria obj) {
+        super();
         this.id = obj.getId();
         this.nome = obj.getNome();
         this.descricao = obj.getDescricao();
